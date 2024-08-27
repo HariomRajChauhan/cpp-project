@@ -7,11 +7,11 @@ Welcome to the LIPI documentation! This guide will help you understand how to wr
 ### Program Structure
 
 A program is a sequence of statements, each ending with a semicolon.
-...
+```sh
 plaintext
 statement1;
 statement2;
-...
+```
 
 
 ## Statements
