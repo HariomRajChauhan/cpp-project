@@ -16,6 +16,7 @@ statement2;
 ## Keywords
 
 The following keywords are reserved and cannot be used as identifiers:
+
   `bhana` `suna` `purna` `dasa` `akshar` `paath` `khali` `yadi` `anyatha` `jabasamma` `lagi` `kaam` `firta`
 
 
