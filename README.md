@@ -18,12 +18,12 @@ statement2;
 ### Print Statement
 
 Use bhana to print a value or expression to the output.
-*Syntax:*
+##*Syntax:*
 ```sh
 bhana(expression);
 ```
 
-*Syntax:*
+##*Syntax:*
 ```sh
 bhana(5 + 3);  // Prints 8
 bhana("Hello, World!");  // Prints Hello, World!
