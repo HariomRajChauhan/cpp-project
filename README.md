@@ -6,7 +6,7 @@ Welcome to the LIPI documentation! This guide will help you understand how to wr
 
 ### Program Structure
 
-A program is a sequence of statements, each ending with a semicolon.
+A program is a sequence of statements, each ending with a semicolon `;`.
 ```sh
 statement1;
 statement2;
@@ -17,14 +17,14 @@ statement2;
 
 ### Print Statement
 
-Use bhana to print a value or expression to the output.
+Use `bhana` to print a value or expression to the output.
 
 *Syntax:*
 ```sh
 bhana(expression);
 ```
 
-*Syntax:*
+*Example:*
 ```sh
 bhana(5 + 3);  // Output: 8
 bhana("Hello, World!");  // Output: Hello, World!
@@ -33,31 +33,35 @@ bhana("Hello, World!");  // Output: Hello, World!
 
 ### Input Statement
 
-Use suna to read a value from the user and store it in a variable.
+Use `suna` to read a value from the user and store it in a variable.
 
 *Syntax:*
-plaintext
+```sh
 suna(variable_name);
+```
 
-
-*Examples:*
-plaintext
+*Example:*
+```sh
+purna name; // Declares an purna variable `name`
 suna(name);  // Reads input into the variable `name`
-
+bhana(name);  // Prints the value of the variable `name`
+```
 
 ### Declaration Statement
 
-Use this to declare a variable. You cannot initialize a variable at the time of declaration.
+Use  to declare a variable. You cannot initialize a variable at the time of declaration.
 
 *Syntax:*
-plaintext
+```sh
 type variable_name;
+```
 
 
 *Examples:*
-plaintext
+```sh
 purna age;  // Declares an integer variable `age`
 dasa salary;  // Declares a decimal variable `salary`
+```
 
 
 ### Assignment Statement
@@ -65,53 +69,55 @@ dasa salary;  // Declares a decimal variable `salary`
 Use this to assign a value to an existing variable.
 
 *Syntax:*
-plaintext
+```sh
 variable_name = expression;
-
+```
 
 *Examples:*
-plaintext
+```sh
 age = 31;  // Assigns the value 31 to the variable `age`
-
+```
 
 ### If Statement
 
 Use yadi to execute a block of code conditionally. You can include an anyatha block for the else condition.
 
 *Syntax:*
-plaintext
+```sh
 yadi(expression) {
     // block of code
 } anyatha {
     // else block of code
 }
+```
 
 
 *Examples:*
-plaintext
+```sh
 yadi(age > 18) {
     bhana("Adult");
 } anyatha {
     bhana("Minor");
 }
-
+```
 
 ### While Statement
 
 Use jabasamma to repeat a block of code while a condition is true.
 
 *Syntax:*
-plaintext
+```sh
 jabasamma(expression) {
     // block of code
 }
-
+```
 
 *Examples:*
-plaintext
+```sh
 jabasamma(age < 30) {
     age = age + 1;
 }
+```
 
 
 ### For Statement
@@ -119,17 +125,19 @@ jabasamma(age < 30) {
 Use lagi to loop through a range of values, specifying initialization, condition, and update.
 
 *Syntax:*
-plaintext
+```sh
 lagi(initialization; condition; update) {
     // block of code
 }
+```
 
 
 *Examples:*
-plaintext
+```sh
 lagi(i = 0; i < 10; i = i + 1) {
     bhana(i);
 }
+```
 
 
 ### Function Definition
@@ -137,17 +145,19 @@ lagi(i = 0; i < 10; i = i + 1) {
 Use kaam to define a new function.
 
 *Syntax:*
-plaintext
+```sh
 kaam return_type function_name(parameter_list) {
     // block of code
 }
+```
 
 
 *Examples:*
-plaintext
+```sh
 kaam purna add(purna a, purna b) {
     firta a + b;
 }
+```
 
 
 ### Return Statement
@@ -155,13 +165,15 @@ kaam purna add(purna a, purna b) {
 Use firta to return a value from a function.
 
 *Syntax:*
-plaintext
+```sh
 firta(expression);
+```
 
 
 *Examples:*
-plaintext
+```sh
 firta result;
+```
 
 
 ## Expressions
@@ -171,15 +183,16 @@ firta result;
 You can perform operations with numbers, strings, and other values.
 
 *Syntax:*
-plaintext
+```sh
 term { ("+" | "-" | "*" | "/") term }
-
+```
 
 *Examples:*
-plaintext
+```sh
 5 + 3 * 2
 "Hello"
 'c'
+```
 
 
 ### Logical Expressions
@@ -187,42 +200,43 @@ plaintext
 Combine logical terms using &&, ||, or ! to form complex conditions.
 
 *Syntax:*
-plaintext
+```sh
 logical_term { ("&&" | "||" | "!") logical_term }
-
+```
 
 *Examples:*
-plaintext
+```sh
 age > 18 && age < 65
-
+```
 
 ### Comparison
 
 Compare values using operators like ==, !=, <, <=, >, and >=.
 
 *Syntax:*
-plaintext
+```sh
 expression (== | != | < | <= | > | >=) expression
-
+```
 
 *Examples:*
-plaintext
+```sh
 age == 30
-
+```
 
 ### Modulo Expression
 
 Calculate the remainder of a division using %.
 
 *Syntax:*
-plaintext
+```sh
 expression % expression
+```
 
 
 *Examples:*
-plaintext
+```sh
 10 % 3  // Results in 1
-
+```
 
 ## Data Types
 
@@ -233,11 +247,13 @@ plaintext
 - khali: Void
 
 *Examples:*
-plaintext
+```sh
 purna count;  // Declare an integer variable
 dasa price;   // Declare a decimal variable
 akshar name;  // Declare a string variable
 paath initial;  // Declare a character variable
+khali nothing;  // Declare a void variable
+```
 
 
 ## Identifiers and Literals
@@ -248,18 +264,13 @@ paath initial;  // Declare a character variable
 - *Character:* A single character enclosed in single quotes (e.g., 'A').
 
 *Examples:*
-plaintext
+```sh
 number = 42;
 text = "Sample text";
 letter = 'A';
-
-
-For further assistance or examples, please refer to additional resources or community forums.
-
-Happy coding!
-
+```
 ---
-=======
+
 # Lipi
 
 ## Building the Project
