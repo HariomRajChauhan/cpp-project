@@ -1,8 +1,4 @@
-Got it! Here’s the updated documentation reflecting that variables cannot be initialized at declaration:
-
----
-
-# Language Documentation
+# LIPI Documentation
 
 Welcome to the language documentation! This guide will help you understand how to write and execute code in our language.
 
