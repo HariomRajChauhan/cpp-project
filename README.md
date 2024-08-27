@@ -1,13 +1,13 @@
 # LIPI Documentation
 
-Welcome to the language documentation! This guide will help you understand how to write and execute code in our language.
+Welcome to the LIPI documentation! This guide will help you understand how to write and execute code in LIPI language.
 
 ## Basic Syntax
 
 ### Program Structure
 
 A program is a sequence of statements, each ending with a semicolon.
-
+...
 plaintext
 statement1;
 statement2;
