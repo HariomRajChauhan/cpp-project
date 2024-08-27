@@ -7,40 +7,49 @@ Welcome to the LIPI documentation! This guide will help you understand how to wr
 ### Program Structure
 
 A program is a sequence of statements, each ending with a semicolon `;`.
+
 ```sh
 statement1;
 statement2;
 ```
+
+## Keywords
+
+The following keywords are reserved and cannot be used as identifiers:
+  `bhana` `suna` `purna` `dasa` `akshar` `paath` `khali` `yadi` `anyatha` `jabasamma` `lagi` `kaam` `firta`
 
 
 ## Statements
 
 ### Print Statement
 
-Use `bhana` to print a value or expression to the output.
+1. Use `bhana` to print a value or expression to the output.
 
 *Syntax:*
+
 ```sh
 bhana(expression);
 ```
 
 *Example:*
+
 ```sh
 bhana(5 + 3);  // Output: 8
 bhana("Hello, World!");  // Output: Hello, World!
 ```
 
-
 ### Input Statement
 
-Use `suna` to read a value from the user and store it in a variable.
+2. Use `suna` to read a value from the user and store it in a variable.
 
 *Syntax:*
+
 ```sh
 suna(variable_name);
 ```
 
 *Example:*
+
 ```sh
 purna name; // Declares an purna variable `name`
 suna(name);  // Reads input into the variable `name`
@@ -49,31 +58,33 @@ bhana(name);  // Prints the value of the variable `name`
 
 ### Declaration Statement
 
-Use  to declare a variable. You cannot initialize a variable at the time of declaration.
+3. Use to declare a variable. You cannot initialize a variable at the time of declaration.
 
 *Syntax:*
+
 ```sh
 type variable_name;
 ```
 
-
 *Examples:*
+
 ```sh
 purna age;  // Declares an integer variable `age`
 dasa salary;  // Declares a decimal variable `salary`
 ```
 
-
 ### Assignment Statement
 
-Use this to assign a value to an existing variable.
+4. Use this to assign a value to an existing variable.
 
 *Syntax:*
+
 ```sh
 variable_name = expression;
 ```
 
 *Examples:*
+
 ```sh
 age = 31;  // Assigns the value 31 to the variable `age`
 ```
@@ -83,6 +94,7 @@ age = 31;  // Assigns the value 31 to the variable `age`
 Use yadi to execute a block of code conditionally. You can include an anyatha block for the else condition.
 
 *Syntax:*
+
 ```sh
 yadi(expression) {
     // block of code
@@ -91,8 +103,8 @@ yadi(expression) {
 }
 ```
 
-
 *Examples:*
+
 ```sh
 yadi(age > 18) {
     bhana("Adult");
@@ -106,6 +118,7 @@ yadi(age > 18) {
 Use jabasamma to repeat a block of code while a condition is true.
 
 *Syntax:*
+
 ```sh
 jabasamma(expression) {
     // block of code
@@ -113,68 +126,68 @@ jabasamma(expression) {
 ```
 
 *Examples:*
+
 ```sh
 jabasamma(age < 30) {
     age = age + 1;
 }
 ```
 
-
 ### For Statement
 
 Use lagi to loop through a range of values, specifying initialization, condition, and update.
 
 *Syntax:*
+
 ```sh
 lagi(initialization; condition; update) {
     // block of code
 }
 ```
 
-
 *Examples:*
+
 ```sh
 lagi(i = 0; i < 10; i = i + 1) {
     bhana(i);
 }
 ```
 
-
 ### Function Definition
 
 Use kaam to define a new function.
 
 *Syntax:*
+
 ```sh
 kaam return_type function_name(parameter_list) {
     // block of code
 }
 ```
 
-
 *Examples:*
+
 ```sh
 kaam purna add(purna a, purna b) {
     firta a + b;
 }
 ```
 
-
 ### Return Statement
 
 Use firta to return a value from a function.
 
 *Syntax:*
+
 ```sh
 firta(expression);
 ```
 
-
 *Examples:*
+
 ```sh
 firta result;
 ```
-
 
 ## Expressions
 
@@ -183,28 +196,31 @@ firta result;
 You can perform operations with numbers, strings, and other values.
 
 *Syntax:*
+
 ```sh
 term { ("+" | "-" | "*" | "/") term }
 ```
 
 *Examples:*
+
 ```sh
 5 + 3 * 2
 "Hello"
 'c'
 ```
 
-
 ### Logical Expressions
 
 Combine logical terms using &&, ||, or ! to form complex conditions.
 
 *Syntax:*
+
 ```sh
 logical_term { ("&&" | "||" | "!") logical_term }
 ```
 
 *Examples:*
+
 ```sh
 age > 18 && age < 65
 ```
@@ -214,11 +230,13 @@ age > 18 && age < 65
 Compare values using operators like ==, !=, <, <=, >, and >=.
 
 *Syntax:*
+
 ```sh
 expression (== | != | < | <= | > | >=) expression
 ```
 
 *Examples:*
+
 ```sh
 age == 30
 ```
@@ -228,12 +246,13 @@ age == 30
 Calculate the remainder of a division using %.
 
 *Syntax:*
+
 ```sh
 expression % expression
 ```
 
-
 *Examples:*
+
 ```sh
 10 % 3  // Results in 1
 ```
@@ -242,19 +261,19 @@ expression % expression
 
 - purna: Integer
 - dasa: Decimal
-- akshar: String
-- paath: Character
+- akshar: Character
+- paath: String
 - khali: Void
 
 *Examples:*
+
 ```sh
 purna count;  // Declare an integer variable
 dasa price;   // Declare a decimal variable
-akshar name;  // Declare a string variable
-paath initial;  // Declare a character variable
+akshar ch;  // Declare a character variable
+paath name;  // Declare a string variable
 khali nothing;  // Declare a void variable
 ```
-
 
 ## Identifiers and Literals
 
@@ -264,11 +283,13 @@ khali nothing;  // Declare a void variable
 - *Character:* A single character enclosed in single quotes (e.g., 'A').
 
 *Examples:*
+
 ```sh
 number = 42;
 text = "Sample text";
 letter = 'A';
 ```
+
 ---
 
 # Lipi
@@ -283,23 +304,27 @@ letter = 'A';
 ### Steps
 
 1. **Clone the Repository**:
+
     ```sh
     git clone https://github.com/yourusername/lipi.git
     cd lipi
     ```
 
 2. **Create a Build Directory**:
+
     ```sh
     mkdir build
     cd build
     ```
 
 3. **Run CMake**:
+
     ```sh
     cmake ..
     ```
 
 4. **Build the Project**:
+
     ```sh
     make
     ```
