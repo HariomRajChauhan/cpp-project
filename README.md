@@ -8,7 +8,6 @@ Welcome to the LIPI documentation! This guide will help you understand how to wr
 
 A program is a sequence of statements, each ending with a semicolon.
 ```sh
-plaintext
 statement1;
 statement2;
 ```
@@ -19,16 +18,16 @@ statement2;
 ### Print Statement
 
 Use bhana to print a value or expression to the output.
+*Syntax:*
+```sh
+bhana(expression);
+```
 
 *Syntax:*
-plaintext
-bhana(expression);
-
-
-*Examples:*
-plaintext
+```sh
 bhana(5 + 3);  // Prints 8
 bhana("Hello, World!");  // Prints Hello, World!
+```
 
 
 ### Input Statement
