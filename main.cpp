@@ -7,6 +7,8 @@
 #include "parser.hpp"
 #include "semantic_analyzer.hpp"
 #include "code_generator.hpp"
+#include "executer.hpp"
+// #include "executer.cpp"
 
 int main(int argc, char** argv){
     if(argc<2){
@@ -48,7 +50,29 @@ int main(int argc, char** argv){
     CodeGenerator codeGenerator;
     std::string gen = codeGenerator.generate(root);
 
-    std::cout << "Generated Code:\n" << gen << std::endl;
+    std::string cppFilename = "temp_program.cpp";
+    std::string binaryFilename = "temp_program";
+
+    // 3. Write the generated code to a file.
+    generateCppFile(gen, cppFilename);
+
+    // 4. Compile the generated C++ code.
+    if (compileCppFile(cppFilename, binaryFilename))
+    {
+        // 5. Run the compiled binary and get the output.
+        std::string output = runBinary(binaryFilename);
+
+        // Optionally, remove the binary after execution.
+        std::remove(binaryFilename.c_str());
+        std::remove(cppFilename.c_str());
+    }
+    else
+    {
+        std::cerr << "Compilation failed." << std::endl;
+    }
+
+
+    // std::cout << "Generated Code:\n" << gen << std::endl;
 
     } catch(std::exception &e){
         std::cout << e.what();

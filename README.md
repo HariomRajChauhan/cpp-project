@@ -19,7 +19,6 @@ The following keywords are reserved and cannot be used as identifiers:
 
   `bhana` `suna` `purna` `dasa` `akshar` `paath` `khali` `yadi` `anyatha` `jabasamma` `lagi` `kaam` `firta`
 
-
 ## Statements
 
 ### Print Statement
@@ -59,7 +58,9 @@ bhana(name);  // Prints the value of the variable `name`
 
 ### Declaration Statement
 
-3. Use to declare a variable. You cannot initialize a variable at the time of declaration.
+3. Use to  a variable. You cannot initialize a variable at the time of declaration.
+
+
 
 *Syntax:*
 
@@ -76,7 +77,7 @@ dasa salary;  // Declares a decimal variable `salary`
 
 ### Assignment Statement
 
-4. Use this to assign a value to an existing variable.
+4. Use your own `Identifier` to assign a value to an existing variable.
 
 *Syntax:*
 
