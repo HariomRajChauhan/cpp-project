@@ -1,4 +1,4 @@
-
+#include "executer.hpp"
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
@@ -51,26 +51,3 @@ std::string runBinary(const std::string &binaryName)
 
     return output;
 }
-
-// int main()
-// {   
-//     // 1. Read the generated code from the file.
-//     std::string generatedCode;
-//     std::ifstream tempFile("temp.txt");
-
-//     if (tempFile.is_open())
-//     {
-//         generatedCode.assign((std::istreambuf_iterator<char>(tempFile)),
-//                              std::istreambuf_iterator<char>());
-//         tempFile.close();
-//     }
-//     else
-//     {
-//         std::cerr << "Failed to open test.txt file for reading." << std::endl;
-//         return 1;
-//     }
-
-//     // 2. Define file names for the temp C++ file and binary.
-    
-//     return 0;
-// }
